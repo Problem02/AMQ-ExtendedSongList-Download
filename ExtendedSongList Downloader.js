@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ExtendedSongList Downloader
 // @namespace    https://github.com/Problem02
-// @version      1.0
+// @version      1.1
 // @description  Downloads the ExtendedSongList JSON from localStorage
 // @author       Problem02
 // @match        https://*.animemusicquiz.com/*
@@ -14,12 +14,14 @@
 (function() {
     'use strict';
 
-    // Wait for the DOM to be ready
+    // Wait for the DOM to be ready and watch for changes
     const observer = new MutationObserver(() => {
         const targetElement = document.getElementById('expandLibraryPage');
-        if (targetElement && targetElement.className == 'gamePage') {
+
+        if (targetElement && targetElement.className === 'gamePage') {
             addDownloadButton();
-            observer.disconnect(); // Stop observing after finding the element
+        } else {
+            removeDownloadButton();
         }
     });
 
@@ -47,7 +49,7 @@
             try {
                 const fileContent = localStorage.getItem('extendedSongList');
                 if (!fileContent) {
-                    alert('No data found in localStorage with the key "extendedSongLibrary".');
+                    alert('No data found in localStorage with the key "extendedSongList".');
                     return;
                 }
 
@@ -70,5 +72,12 @@
         });
 
         document.body.appendChild(downloadButton);
+    }
+
+    function removeDownloadButton() {
+        const downloadButton = document.getElementById('downloadExtendedSongLibraryButton');
+        if (downloadButton) {
+            downloadButton.remove();
+        }
     }
 })();
