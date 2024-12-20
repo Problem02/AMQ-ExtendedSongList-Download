@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         ExtendedSongList Downloader
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/Problem02
 // @version      1.0
 // @description  Downloads the ExtendedSongList JSON from localStorage
 // @author       Problem02
 // @match        https://*.animemusicquiz.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @downloadURL  https://github.com/Problem02/AMQ-ExtendedSongList-Download/raw/refs/heads/main/ExtendedSongList%20Downloader.js
+// @updateURL    https://github.com/Problem02/AMQ-ExtendedSongList-Download/raw/refs/heads/main/ExtendedSongList%20Downloader.js
 // @grant        none
 // ==/UserScript==
 
