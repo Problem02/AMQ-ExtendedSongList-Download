@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ExtendedSongList Downloader
 // @namespace    https://github.com/Problem02
-// @version      1.1
+// @version      1.0
 // @description  Downloads the ExtendedSongList JSON from localStorage
 // @author       Problem02
 // @match        https://*.animemusicquiz.com/*
