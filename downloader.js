@@ -6,8 +6,8 @@
 // @author       Problem02
 // @match        https://*.animemusicquiz.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-// @downloadURL  https://github.com/Problem02/AMQ-ExtendedSongList-Download/raw/main/src/ExtendedSongList%20Downloader.js
-// @updateURL    https://github.com/Problem02/AMQ-ExtendedSongList-Download/raw/main/src/ExtendedSongList%20Downloader.js
+// @downloadURL  https://github.com/Problem02/AMQ-ExtendedSongList-Download/raw/main/src/downloader.js
+// @updateURL    https://github.com/Problem02/AMQ-ExtendedSongList-Download/raw/main/src/downloader.js
 // @grant        none
 // ==/UserScript==
 
